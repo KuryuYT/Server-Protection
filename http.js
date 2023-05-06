@@ -1,6 +1,6 @@
 const fs = require('fs');
-const key = fs.readFileSync('key.pem');
-const cert = fs.readFileSync('cert.pem');
+const key = fs.readFileSync('server.key');
+const cert = fs.readFileSync('server.crt');
 var http = require('http');
 var blacklist = new Map();
 var files = new Map();
